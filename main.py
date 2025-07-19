@@ -1,11 +1,11 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from langchain.chat_models import ChatOpenAI
-from langchain.chains import RetrievalQA
-from langchain.vectorstores import FAISS
-from langchain.document_loaders import DirectoryLoader
-from langchain.text_splitter import CharacterTextSplitter
-from langchain.embeddings import OpenAIEmbeddings
+from langchain-community.chat_models import ChatOpenAI
+from langchain-community.chains import RetrievalQA
+from langchain-community.vectorstores import FAISS
+from langchain-community.document_loaders import DirectoryLoader
+from langchain-community.text_splitter import CharacterTextSplitter
+from langchain-community.embeddings import OpenAIEmbeddings
 import os
 
 app = FastAPI()
